@@ -1,0 +1,29 @@
+cff-version: 1.2.0
+message: "Si usa este software o datos, cite como sigue."
+authors:
+  - family-names: Lerer
+    given-names: Adrian
+    orcid: "https://orcid.org/0000-0000-0000-0000"
+title: "Bien Común vs. Bienestar General: Análisis Memético de Términos Legitimadores"
+version: 0.1.0
+date-released: 2025-01-15
+url: "https://github.com/adrianlerer/bien-comun-bienestar-general"
+repository-code: "https://github.com/adrianlerer/bien-comun-bienestar-general"
+keywords:
+  - extended phenotype theory
+  - constitutional law
+  - memetics
+  - legal evolution
+  - Latin America
+  - comparative constitutional law
+  - jurisprudence
+  - bien común
+  - bienestar general
+  - legitimating terms
+license: MIT
+abstract: |
+  This repository contains data, code, and documentation for analyzing 
+  constitutional legitimating terms ("bien común", "bienestar general", 
+  "interés público") from an Extended Phenotype Theory perspective. 
+  We test whether these terms operate as independent normative premises 
+  or as markers of memetic identity that predetermine institutional outcomes.

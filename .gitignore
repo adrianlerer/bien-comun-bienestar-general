@@ -1,0 +1,79 @@
+# Datos sensibles o de gran tamaño
+data/raw/jurisprudence/*/full_texts/*.pdf
+data/external/proprietary_sources/
+*.pdf
+
+# Outputs temporales
+*.log
+*.tmp
+.Rhistory
+.RData
+.DS_Store
+*~
+
+# Entornos virtuales
+venv/
+env/
+.conda/
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+dist/
+build/
+
+# Jupyter
+.ipynb_checkpoints/
+*/.ipynb_checkpoints/*
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*.sublime-*
+
+# Outputs pesados (generar localmente, no versionar)
+outputs/figures/*.png
+outputs/figures/*.pdf
+outputs/figures/*.svg
+outputs/tables/*.xlsx
+outputs/tables/*.csv
+outputs/reports/*.html
+outputs/reports/*.pdf
+
+# Mantener directorios vacíos con .gitkeep
+!**/.gitkeep
+
+# Credentials
+.env
+credentials.json
+*.key
+config/secrets.yaml
+
+# Large files (usar Git LFS si necesario)
+*.zip
+*.tar.gz
+data/raw/philosophical_corpus/*.txt
+
+# R
+.Rproj.user/
+*.Rproj
+
+# Python
+*.egg-info/
+.pytest_cache/
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Linux
+.directory
+.Trash-*

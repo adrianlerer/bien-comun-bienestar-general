@@ -1,145 +1,261 @@
-# Análisis Comparativo: "Bien Común" vs "Bienestar General" en Constituciones Latinoamericanas
+# Bien Común vs. Bienestar General: Análisis Memético de Términos Legitimadores Constitucionales
 
-## Resumen del Proyecto
+[![License: CC BY 4.0](https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/)
+[![Status: In Progress](https://img.shields.io/badge/Status-In%20Progress-yellow.svg)](https://github.com/adrianlerer/bien-comun-bienestar-general)
 
-Este repositorio contiene la investigación comparativa sobre el uso de términos legitimadores en constituciones y jurisprudencia de América Latina, con foco en:
+## Descripción del Proyecto
 
-- **"bien común"** (common good) - linaje aristotélico-tomista-Doctrina Social de la Iglesia
-- **"bienestar general"** (general welfare) - linaje lockeano-utilitarista-constitucionalismo anglosajón
+Este repositorio contiene datos, código y documentación para el proyecto de investigación que analiza términos legitimadores constitucionales ("bien común", "bienestar general", "interés público") desde la perspectiva de Extended Phenotype Theory (EPT) aplicada a sistemas legales.
 
-**Hipótesis central:** El término legitimador utilizado por tribunales predice resultados judiciales mejor que variables contextuales, revelando patrones de aptitud memética.
+**Investigador Principal:** Adrian Lerer  
+**Afiliación:** Independent Scholar, Buenos Aires, Argentina  
+**Período:** 2024-2025  
+**Estado:** Work in Progress - Fase 1 (Recolección de Datos)
 
-## Marco Teórico
+## Pregunta de Investigación Central
 
-**Extended Phenotype Theory (Dawkins 1982) aplicada al derecho:**
-- Normas jurídicas como constructos que modifican el ambiente (como represas de castores)
-- Términos constitucionales llevan "material genético" filosófico que afecta resultados
-- Aptitud memética = éxito reproductivo en doctrina judicial
+¿Los términos legitimadores constitucionales operan como premisas normativas independientes o como marcadores de identidad memética que predeterminan resultados institucionales?
 
-**Aptitud Memética Asimétrica:**
-- "Bien común" favorece **beneficiarios presentes** (actores organizados con intereses inmediatos)
-- "Bienestar general" difunde beneficios hacia **poblaciones futuras/desorganizadas**
+## Hipótesis Principal
 
-## Ámbito Geográfico
+Los términos legitimadores no transmiten contenido normativo sino **identidad memética**. La elección del término (bien común vs. bienestar general) predice el resultado del caso mejor que variables contextuales, porque cada término porta genealogías filosóficas completas que actúan como fenotipos extendidos de memeplexos competidores.
 
-**10 jurisdicciones latinoamericanas:**
-Argentina, Brasil, Chile, México, Colombia, Perú, Uruguay, Venezuela, Ecuador, Bolivia
-
-## Estructura del Proyecto
+### Mecanismo Propuesto
 
 ```
-bien-comun-bienestar-general/
-├── data/
-│   ├── constitutional/          # Inventarios constitucionales (CSV)
-│   ├── jurisprudential/         # Corpus de fallos de Cortes Supremas
-│   ├── bibliometric/            # Datos de análisis bibliométrico
-│   └── raw/                     # Datos sin procesar
-├── docs/
-│   ├── genealogies/             # Genealogías filosóficas de términos
-│   ├── analysis/                # Documentos de análisis
-│   └── methodology/             # Metodología y protocolos
-├── analysis/
-│   ├── statistical/             # Scripts de análisis estadístico
-│   ├── computational/           # Herramientas computacionales (RootFinder, IusMorfos, etc.)
-│   └── visualization/           # Código de visualización
-├── figures/                     # Gráficos y visualizaciones
-└── references/                  # Bibliografía y materiales de referencia
+GENEALOGÍA FILOSÓFICA → TÉRMINO LEGITIMADOR → RESULTADO INSTITUCIONAL
+      (material genético)      (fenotipo)         (fitness diferencial)
 ```
 
-## Bloques de Investigación
+**"Bien común":** Aristóteles → Tomás de Aquino → Doctrina Social Católica → Constituciones LatAm  
+→ Favorece: beneficiarios presentes, organizados, participación comunitaria
 
-### BLOQUE 1: Fundamentos Constitucional-Doctrinales
-- Inventario constitucional (10 países)
-- Análisis diacrónico (reformas constitucionales)
-- Genealogía "bien común" (Aristóteles → Tomás → CSI)
-- Genealogía "bienestar general" (Locke → Bentham → USA)
-- Análisis de explotación de polisemia
+**"Bienestar general":** Locke → Constitución USA → Bentham → Alberdi → Constituciones LatAm  
+→ Favorece: beneficiarios futuros, difusos, maximización utilidad agregada
 
-### BLOQUE 2: Corpus Jurisprudencial
-- Cortes Supremas de América Latina (corpus multi-país)
-- CSJN Argentina (análisis intensivo: 50-80 fallos anotados)
-- STF Brasil (análisis comparativo: 30-50 fallos)
-- Chile/México/Colombia (20-30 fallos cada uno)
+## Estructura del Repositorio
 
-### BLOQUE 3: Análisis Doctrinal/Académico
-- Mapeo bibliométrico (redes de citación)
-- Doctrina Social de la Iglesia (León XIII → Francisco)
-- Comunitarismo anglosajón (Sandel, MacIntyre, Walzer)
-- Clusters académicos (escuelas iberoamericanas vs anglosajonas)
+```
+├── data/          # Datos primarios y procesados
+├── analysis/      # Scripts de análisis estadístico y cualitativo
+├── tools/         # Herramientas computacionales (RootFinder, JurisRank, etc.)
+├── outputs/       # Figuras, tablas, reportes generados
+├── docs/          # Documentación teórica y metodológica
+├── notebooks/     # Jupyter notebooks exploratorios
+└── prompts/       # Prompts para recolección de datos con IA
+```
 
-### BLOQUE 4: Crisis y Contexto Político
-- Correlación con crisis económicas (2001 Argentina, 2008 global)
-- Análisis de regímenes autoritarios (patrones de adopción de términos)
-- Transiciones democráticas (momentos de rediseño constitucional)
+## Datos
 
-### BLOQUE 5: Preparación para Herramientas Computacionales
-- RootFinder (grafos genealógicos)
-- IusMorfos (puntajes de viabilidad de trasplantes)
-- JurisRank (métricas de centralidad de citación)
-- Legal-Memespace (coordenadas ideológicas)
+### Corpus Principal
+- **Constituciones:** 10 países latinoamericanos (1853-2024)
+- **Jurisprudencia:** ~300 casos de Cortes Supremas/Tribunales Constitucionales
+  - Argentina (CSJN): n=150 (target)
+  - Chile, Colombia, México, Brasil, Perú: n=150 (total)
+- **Textos filosóficos:** Corpus genealógico desde Aristóteles (335 BCE) hasta documentos pontificios contemporáneos (2020)
+- **Variables contextuales:** Crisis económicas, composición tribunales, reformas constitucionales
 
-### BLOQUE 6: Validación de Hipótesis
-- Testeo estadístico (regresión logística, PSM)
-- Análisis de casos desviantes (resultados anómalos)
-- Métricas de aptitud memética (cuantificación de éxito reproductivo)
+### Acceso a Datos
+Los datos están organizados en `data/raw/` (fuentes originales) y `data/processed/` (datasets codificados). Ver `data/README.md` para detalles sobre fuentes y licencias.
 
-## Términos Clave Analizados
+**Nota sobre datos sensibles:** Algunos textos jurisprudenciales pueden estar sujetos a restricciones de uso. El repositorio incluye metadata y códigos de identificación para replicación, pero usuarios deben obtener textos completos de fuentes oficiales cuando sea necesario.
 
-1. **"bien común"** - Common good
-2. **"bienestar general"** - General welfare
-3. **"interés público"** - Public interest
-4. **"orden público"** - Public order
-5. **"seguridad jurídica"** - Legal certainty
+## Herramientas Computacionales
+
+Este proyecto desarrolla/adapta cuatro herramientas:
+
+### 1. **RootFinder** - Genealogía de Conceptos Legales
+Traza linajes filosóficos desde textos fundacionales hasta uso constitucional/jurisprudencial contemporáneo.
+
+**Funcionalidades:**
+- Identificación de citaciones directas e influencias conceptuales
+- Cálculo de distancia semántica (cosine similarity entre embeddings)
+- Visualización de árboles genealógicos
+- Detección de mutaciones semánticas
+
+**Implementación:** `tools/rootfinder/`
+
+### 2. **JurisRank** - Fitness Institucional de Precedentes
+Análisis de redes de citación con decay temporal para medir "fitness" de conceptos legales.
+
+**Funcionalidades:**
+- PageRank con decay temporal exponencial
+- Identificación de precedentes "ancestrales" (alta centralidad)
+- Medición de aptitud reproductiva (citas en años subsiguientes)
+- Detección de conceptos "extintos" (dejaron de citarse)
+
+**Implementación:** `tools/jurisrank/`
+
+### 3. **Legal-Memespace** - Competencia Memética entre Doctrinas
+Mapeo espacial de conceptos legales para visualizar competencia territorial.
+
+**Funcionalidades:**
+- Embeddings de textos legales (BERT multilingüe)
+- Reducción dimensional (UMAP/t-SNE)
+- Identificación de "territorios" doctrinales (clustering)
+- Análisis de invasiones meméticas (casos donde término "invade" territorio ajeno)
+
+**Implementación:** `tools/legal_memespace/`
+
+### 4. **IusMorfos** - Predicción de Trasplantes Legales
+Matriz de compatibilidad para predecir éxito de adopción de conceptos entre jurisdicciones.
+
+**Funcionalidades:**
+- Cálculo de compatibilidad genealógica (overlap de linajes filosóficos)
+- Predicción de supervivencia de trasplantes
+- Identificación de "especies invasoras" (conceptos que prosperan fuera de origen)
+
+**Implementación:** `tools/iusmorfos/`
 
 ## Metodología
 
-**Recolección de Datos:**
-- Scraping de textos constitucionales (fuentes gubernamentales oficiales)
-- Consultas a bases jurisprudenciales (SAIJ, Lex Paulista, SCJN, etc.)
-- Minería bibliométrica (Google Scholar, SSRN, SciELO)
-- Codificación manual con chequeos de confiabilidad inter-evaluadores
+### Análisis Cuantitativo
+- **Regresión logística:** Predicción de resultados según término usado
+- **Propensity Score Matching:** Control de sesgo de selección
+- **Análisis de redes:** JurisRank para fitness de precedentes
+- **Modelos multinivel:** Efectos país en análisis cross-nacional
 
-**Técnicas Estadísticas:**
-- Regresión logística (resultado ~ término_legitimador + controles)
-- Propensity Score Matching (inferencia causal)
-- Análisis de redes (patrones de citación)
-- Procesamiento de lenguaje natural (embeddings contextuales)
+### Análisis Cualitativo
+- **Estudios de caso:** Casos paradigmáticos (Sejean, Mendoza, etc.)
+- **Análisis histórico:** Debates constituyentes
+- **Reconstrucción argumental:** Mapeo de estructuras argumentativas
 
-**Control de Calidad:**
-- Etiquetado de confianza: `[VERIFICADO]` / `[INFERENCIA]` / `[ESTIMACIÓN]`
-- Declaraciones de muestra (exhaustiva vs. representativa)
-- Triangulación entre fuentes
-- **Principio: CALIDAD > CANTIDAD**
+### Procesamiento NLP
+- **Embeddings semánticos:** BERT multilingüe para análisis semántico
+- **Análisis de sentimientos:** (no aplicado - términos no tienen valencia emocional clara)
+- **Topic modeling:** LDA para identificar temas asociados a cada término
+- **Similarity metrics:** Cosine similarity para distancias genealógicas
 
-## Formatos de Entregables
+Ver `docs/methodology.md` para protocolo completo.
 
-**Datos Tabulares:**
-- Formato CSV, codificación UTF-8
-- Encabezados claros, sin celdas fusionadas
-- Archivos separados por unidad analítica
+## Resultados Preliminares
 
-**Análisis Narrativos:**
-- Documentos estructurados en Markdown
-- Citas completas con URLs/DOIs
-- Encabezados de sección para navegación
+**[Actualizado 2025-11-14]**
 
-**Advertencias/Limitaciones:**
-- Declaración explícita del alcance de búsqueda
-- Niveles de confianza marcados
-- Decisiones de exclusión/muestreo documentadas
+### Fase 1: Inventario Constitucional
+- ✅ **Genealogía "Bien Común" completa:** Aristóteles → Tomás → DSI → Chile/Colombia (2,350 años)
+- ✅ **Genealogía "Bienestar General" completa:** Locke → USA → Bentham → Alberdi → Argentina/Perú (336 años)
+- ⏳ **Inventario constitucional:** 12/300 ocurrencias verificadas
+  - Argentina: 1 ("bienestar general" Preámbulo)
+  - Chile: 4 ("bien común" Art. 1, "interés público" Art. 19-24, "orden público" 3x)
+  - México: 2 ("interés general", "orden jurídico")
+  - Colombia: 2+ ("bien común" Art. 333, "interés general" Art. 1)
+  - Perú: 2 ("bienestar general" Art. 44, "orden público" Art. 2)
 
-## Autor
+### Fase 1: Corpus Jurisprudencial
+- ⏳ **Estructura de dataset creada:** 13 casos seed (Argentina, Chile, Colombia, Perú, México, Brasil)
+- ⏳ **Target:** 300 casos totales (150 Argentina CSJN + 150 otros países)
 
-**Adrián Lerer**
-- GitHub: [@adrianlerer](https://github.com/adrianlerer)
-- Repositorio: https://github.com/adrianlerer/bien-comun-bienestar-general
+### Hallazgos Genealógicos Clave
+1. **Bifurcación terminológica confirmada:**
+   - Norte de LatAm (México, Colombia, Venezuela): predomina "bien común" (herencia hispánica)
+   - Sur de LatAm (Argentina, Paraguay, Uruguay): predomina "bienestar general" (influencia USA)
+   
+2. **Colombia como caso híbrido:** Usa "interés general" (Art. 1) y "bien común" (Art. 333) simultáneamente
+   
+3. **Incompatibilidades filosóficas documentadas:** 11 dimensiones de divergencia entre linajes (ver `docs/genealogies/`)
+
+Ver `outputs/reports/` para informes actualizados.
+
+## Publicaciones Planeadas
+
+### Working Papers
+- **[En preparación]** "Fundamentos sin Fundamento: Análisis Memético de Términos Legitimadores Constitucionales"  
+  Target: SSRN (2025-Q1), luego Law & Society Review
+
+### Presentaciones
+- **[Target]** IPSA World Congress 2025
+- **[Target]** SELA (Seminario en Latinoamérica de Teoría Constitucional y Política) 2025
+
+## Replicación
+
+Para replicar los análisis:
+
+```bash
+# 1. Clonar repositorio
+git clone https://github.com/adrianlerer/bien-comun-bienestar-general.git
+cd bien-comun-bienestar-general
+
+# 2. Crear ambiente
+conda env create -f replication/environment.yml
+conda activate bien-comun-analysis
+
+# 3. Ejecutar pipeline completo
+bash replication/run_all_analyses.sh
+```
+
+Ver `replication/README_replication.md` para instrucciones detalladas.
+
+**Nota:** Fase 1 (recolección de datos) aún en progreso. Scripts de replicación serán funcionales tras completar Fase 1.
+
+## Citación
+
+Si usa datos o herramientas de este proyecto, cite como:
+
+```bibtex
+@misc{lerer2025biencomun,
+  author = {Lerer, Adrian},
+  title = {Bien Común vs. Bienestar General: Análisis Memético de Términos Legitimadores Constitucionales},
+  year = {2025},
+  publisher = {GitHub},
+  url = {https://github.com/adrianlerer/bien-comun-bienestar-general},
+  note = {Work in Progress}
+}
+```
 
 ## Licencia
 
-[Pendiente de especificación]
+- **Código:** MIT License
+- **Datos originales:** CC BY 4.0 (donde aplicable; ver licencias específicas en `data/README.md`)
+- **Textos constitucionales y jurisprudenciales:** Dominio público o sujetos a términos de fuentes oficiales
+- **Documentos pontificios:** Dominio público (fuente: vatican.va)
+
+## Contacto
+
+**Adrian Lerer**  
+Email: adrianlerer@gmail.com  
+SSRN: https://papers.ssrn.com/sol3/cf_dev/AbsByAuth.cfm?per_id=3716273  
+GitHub: https://github.com/adrianlerer
+
+## Agradecimientos
+
+Este proyecto se beneficia de:
+- Herramientas Genspark para recolección de datos asistida por IA
+- Claude (Anthropic) para asistencia en análisis estadístico y genealogía conceptual
+- Comunidad SSRN y revisores anónimos por feedback en versiones preliminares
 
 ## Estado del Proyecto
 
-**Fase actual:** FASE 1 - Fundamentos (en progreso)
+**Última actualización:** 2025-11-14  
+**Fase actual:** 🟡 Fase 1 - Recolección de Datos (30% completo)
 
-**Última actualización:** 2025-11-14
+### Completado ✅
+- [x] Estructura de repositorio
+- [x] Documentación teórica inicial
+- [x] Genealogía "Bien Común" completa (Prompt 1.3)
+- [x] Genealogía "Bienestar General" completa (Prompt 1.4)
+- [x] Inventario constitucional preliminar (12 ocurrencias verificadas)
+- [x] Estructura de dataset jurisprudencial
+
+### En Progreso 🟡
+- [ ] Prompt 1.1: Inventario constitucional exhaustivo (target 200-300 ocurrencias) - **30% completo**
+- [ ] Prompt 2.1: Corpus jurisprudencial LatAm - **10% completo**
+- [ ] Prompt 2.2: CSJN Argentina análisis intensivo (target 50-80 casos) - **0% completo**
+
+### Pendiente ⚪
+- [ ] Herramientas computacionales (RootFinder, JurisRank, Legal-Memespace, IusMorfos)
+- [ ] Análisis estadístico
+- [ ] Estudios de caso cualitativos
+- [ ] Working paper
+
+### Blockers 🔴
+- Ninguno actualmente
+
+---
+
+**Contribuciones:** Este proyecto está en desarrollo activo. Issues y pull requests son bienvenidos para:
+- Correcciones de datos constitucionales/jurisprudenciales
+- Mejoras en herramientas computacionales
+- Sugerencias metodológicas
+
+Ver `CONTRIBUTING.md` para lineamientos (próximamente).
