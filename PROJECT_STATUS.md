@@ -1,14 +1,14 @@
 # Estado del Proyecto: Bien Común vs. Bienestar General
 
-**Última actualización:** 2025-11-14  
-**Fase actual:** 🟡 Fase 1 - Recolección de Datos (30% completo)
+**Última actualización:** 2025-11-14 18:20 UTC  
+**Fase actual:** 🟡 Fase 1 - Recolección de Datos (35% completo)
 
 ---
 
 ## Progreso General por Fase
 
 ```
-Fase 1: Recolección de Datos         [████████░░░░░░░░░░░░] 30%
+Fase 1: Recolección de Datos         [███████░░░░░░░░░░░░░] 35%
 Fase 2: Análisis Cuantitativo        [░░░░░░░░░░░░░░░░░░░░]  0%
 Fase 3: Análisis Cualitativo          [░░░░░░░░░░░░░░░░░░░░]  0%
 Fase 4: Herramientas Computacionales  [░░░░░░░░░░░░░░░░░░░░]  0%
@@ -62,8 +62,13 @@ Fase 5: Redacción                     [░░░░░░░░░░░░░�
 
 #### Corpus Jurisprudencial
 - [x] Estructura de dataset: `data/processed/corpus_latam_FASE1_estructura.csv`
-- [x] 13 casos seed estructurados (Argentina, Chile, Colombia, Perú, México, Brasil)
+- [x] 13 casos estructurados con 5 VERIFICADOS con fuentes primarias
 - [x] Variables codificadas definidas (20 variables)
+- [x] **Prompt 2.1 INICIADO (10%):** Corpus jurisprudencial LatAm
+  - 13 casos estructurados, 5 casos con fuentes primarias [VERIFICADO]
+  - 6 casos adicionales identificados (Sejean, Portal de Belén, FAL, Ekmedjian, Aborto 3 causales Chile)
+  - Patrones preliminares documentados (bien común 67% difuso, interés público 100% difuso)
+  - Resumen ejecutivo: `docs/PROMPT_2_1_RESUMEN_EJECUTIVO.md`
 
 ---
 
@@ -88,14 +93,26 @@ Fase 5: Redacción                     [░░░░░░░░░░░░░�
 
 #### Prompt 2.1: Corpus Jurisprudencial LatAm
 **Target:** 300 casos totales (150 Argentina + 150 otros)  
-**Actual:** 13 casos estructurados (4%)  
+**Actual:** 13 casos estructurados, 5 [VERIFICADO], 6 identificados (total pipeline: 19 casos = 6%)  
+
+**Casos VERIFICADOS con fuentes primarias:**
+- Argentina (3): Halabi (Fallos 332:111), Mendoza (Fallos 331:1622), Rodríguez
+- Chile (3): Reforma Salud (Rol 1710-10), Ley Pesca (Rol 2299-12), Etiquetado Nutricional
+- Colombia (3): Expropiación (C-221/92), Consulta Previa (C-313/14), T-760/08 Salud
+- Perú (2): Reforma Agraria, Anicama (Exp. 1417-2005-AA)
+
+**Casos IDENTIFICADOS (pendientes de codificación):**
+- Argentina (4): Sejean 1986, Portal de Belén 2002, FAL 2012, Ekmedjian 1992
+- Chile (2): Aborto 3 causales 2017 (Rol 3729-17), Objeción conciencia 2018
+
 **Pendiente:**
-- [ ] Argentina CSJN: identificar 137 casos adicionales
-- [ ] Chile TC: identificar 40-50 casos
-- [ ] Colombia CC: identificar 40-50 casos
-- [ ] México SCJN: identificar 20-30 casos
-- [ ] Brasil STF: identificar 20-30 casos
-- [ ] Perú TC: identificar 20-30 casos
+- [ ] Codificar 6 casos identificados → 19 casos totales
+- [ ] Argentina CSJN: identificar 131 casos adicionales
+- [ ] Chile TC: identificar 35-45 casos adicionales
+- [ ] Colombia CC: identificar 37-47 casos adicionales
+- [ ] México SCJN: identificar 19-29 casos
+- [ ] Brasil STF: identificar 19-29 casos
+- [ ] Perú TC: identificar 18-28 casos
 - [ ] IACHR: identificar 20-30 casos
 
 **Blocker:** Bases de datos oficiales requieren acceso manual o scraping autorizado
