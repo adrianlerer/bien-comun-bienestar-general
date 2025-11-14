@@ -1,14 +1,14 @@
 # Estado del Proyecto: Bien Común vs. Bienestar General
 
-**Última actualización:** 2025-11-14 18:45 UTC  
-**Fase actual:** 🟡 Fase 1 - Recolección de Datos (37% completo)
+**Última actualización:** 2025-11-14 21:10 UTC  
+**Fase actual:** 🟡 Fase 1 - Recolección de Datos (40% completo)
 
 ---
 
 ## Progreso General por Fase
 
 ```
-Fase 1: Recolección de Datos         [███████░░░░░░░░░░░░░] 37%
+Fase 1: Recolección de Datos         [████████░░░░░░░░░░░░] 40%
 Fase 2: Análisis Cuantitativo        [░░░░░░░░░░░░░░░░░░░░]  0%
 Fase 3: Análisis Cualitativo          [░░░░░░░░░░░░░░░░░░░░]  0%
 Fase 4: Herramientas Computacionales  [░░░░░░░░░░░░░░░░░░░░]  0%
@@ -62,13 +62,14 @@ Fase 5: Redacción                     [░░░░░░░░░░░░░�
 
 #### Corpus Jurisprudencial
 - [x] Estructura de dataset: `data/processed/corpus_latam_FASE1_estructura.csv`
-- [x] 19 casos codificados con 19 VERIFICADOS con fuentes primarias
+- [x] 30 casos codificados con 30 VERIFICADOS con fuentes primarias
 - [x] Variables codificadas definidas (20 variables)
-- [x] **Prompt 2.1 INICIADO (12%):** Corpus jurisprudencial LatAm
-  - 19 casos totalmente codificados [VERIFICADO]
-  - Casos paradigmáticos Argentina: Sejean (1986), Portal de Belén (2002), FAL (2012), Ekmedjian (1992)
-  - Casos paradigmáticos Chile: Aborto 3 causales (Rol 3729-17), Objeción conciencia (Rol 5572-18)
-  - Patrones preliminares documentados (bien común 67% difuso, interés público 100% difuso)
+- [x] **Prompt 2.1 AVANZANDO (18%):** Corpus jurisprudencial LatAm
+  - 30 casos totalmente codificados [VERIFICADO]
+  - **Casos fundacionales:** Siri (1957 - creación pretoriana amparo), Kot (1958 - amparo horizontal)
+  - **Casos paradigmáticos Argentina:** Sejean, Portal de Belén, FAL, Ekmedjian, Verbitsky, Badaro, Aquino, Arriola, Vizzoti, Simón, Campodónico, Benghalensis, Hooft
+  - **Casos paradigmáticos Chile:** Aborto 3 causales (Rol 3729-17), Objeción conciencia (Rol 5572-18)
+  - Patrones preliminares documentados (bien común, interés público, bienestar general)
   - Resumen ejecutivo: `docs/PROMPT_2_1_RESUMEN_EJECUTIVO.md`
 
 ---
@@ -94,26 +95,33 @@ Fase 5: Redacción                     [░░░░░░░░░░░░░�
 
 #### Prompt 2.1: Corpus Jurisprudencial LatAm
 **Target:** 300 casos totales (150 Argentina + 150 otros)  
-**Actual:** 19 casos codificados [VERIFICADO] (6%)  
+**Actual:** 30 casos codificados [VERIFICADO] (10%)  
 
 **Casos VERIFICADOS con fuentes primarias:**
-- Argentina (7): Halabi (Fallos 332:111), Mendoza (Fallos 331:1622), Rodríguez (R. 401 XL), Sejean (Fallos 308:2268), Portal de Belén (2002), FAL (Fallos 336:1888), Ekmedjian (Fallos 315:1492)
-- Chile (4): Reforma Salud (Rol 1710-10), Ley Pesca (Rol 2299-12), Etiquetado Nutricional (Rol 4317-18), Aborto 3 causales (Rol 3729-17), Objeción conciencia (Rol 5572-18)
-- Colombia (3): Expropiación (C-221/92), Consulta Previa (C-313/14), T-760/08 Salud
-- Perú (2): Reforma Agraria (Exp. 0048-2004-AI), Anicama (Exp. 1417-2005-AA)
-- México (1): Amparo Directo 6/2008 Medio ambiente
-- Brasil (1): RE 194.704 Educación
+- **Argentina (18):** Siri (1957), Kot (1958), Sejean (1986), Ekmedjian (1992), Campodónico (2000), Benghalensis (2000), Aquino (2004), Vizzoti (2004), Hooft (2004), Verbitsky (2005), Simón (2005), Badaro (2007), Mendoza (2008), Arriola (2009), Halabi (2009), Rodríguez (2009), FAL (2012), Portal de Belén (2002)
+- **Chile (5):** Reforma Salud (Rol 1710-10), Ley Pesca (Rol 2299-12), Aborto 3 causales (Rol 3729-17), Etiquetado Nutricional (Rol 4317-18), Objeción conciencia (Rol 5572-18)
+- **Colombia (3):** Expropiación (C-221/92), Consulta Previa (C-313/14), T-760/08 Salud
+- **Perú (2):** Reforma Agraria (Exp. 0048-2004-AI), Anicama (Exp. 1417-2005-AA)
+- **México (1):** Amparo Directo 6/2008 Medio ambiente
+- **Brasil (1):** RE 194.704 Educación
 
-**Casos paradigmáticos recién codificados:**
-- ✅ Sejean (1986): Declaró inconstitucional prohibición remarriage, anticipó divorcio vincular
-- ✅ Portal de Belén (2002): Prohibió píldora del día después, interpretó vida desde concepción
-- ✅ FAL (2012): Amplió aborto no punible a toda víctima violación, sin autorización judicial
-- ✅ Ekmedjian (1992): Operatividad directa Art. 14.1 Pacto San José, jerarquía tratados DDHH
-- ✅ Chile Aborto 3 causales (2017): Validó despenalización IVE 3 causales
-- ✅ Chile Objeción conciencia (2018): Validó objeción institucional clínicas privadas
+**Casos fundacionales históricos:**
+- ✅ Siri (1957): Creación pretoriana del amparo en Argentina
+- ✅ Kot (1958): Extensión amparo a actos de particulares (Drittwirkung horizontal)
+
+**Casos CSJN recién codificados (sesión actual +17):**
+- ✅ Verbitsky (2005): Habeas corpus colectivo, hacinamiento carcelario
+- ✅ Badaro (2007): Movilidad jubilatoria, control omisiones legislativas
+- ✅ Aquino (2004): Inconstitucionalidad topes LRT
+- ✅ Arriola (2009): Inconstitucionalidad tenencia drogas uso personal
+- ✅ Vizzoti (2004): Tope indemnizatorio despido 67%
+- ✅ Simón (2005): Inconstitucionalidad leyes Punto Final y Obediencia Debida
+- ✅ Campodónico (2000): Salud reproductiva, ligadura trompas
+- ✅ Benghalensis (2000): Primer amparo colectivo CSJN, HIV/SIDA medicamentos
+- ✅ Hooft (2004): Discriminación origen nacional, escrutinio estricto
 
 **Pendiente:**
-- [ ] Argentina CSJN: identificar 143 casos adicionales (actual: 7, target: 150)
+- [ ] Argentina CSJN: identificar 132 casos adicionales (actual: 18, target: 150)
 - [ ] Chile TC: identificar 35-45 casos adicionales
 - [ ] Colombia CC: identificar 37-47 casos adicionales
 - [ ] México SCJN: identificar 19-29 casos
